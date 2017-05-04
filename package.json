@@ -4,9 +4,21 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "description": "nodejs todo app",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tars4doro/node-todo.git"
+  },
+  "author": "tars4doro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tars4doro/node-todo/issues"
+  },
+  "homepage": "https://github.com/tars4doro/node-todo#readme",
   "engines": {
-  "node": "7.7.2",
-  "npm": "4.1.2"
+    "node": "7.9.0",
+    "npm": "4.2.0"
   },
   "dependencies": {
     "async": "^2.3.0",
