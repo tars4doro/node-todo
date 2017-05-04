@@ -1,0 +1,234 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+p {
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #34495e;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  background: #2c3e50;
+  overflow: hidden;
+  width: 360px;
+  margin: 0 auto;
+  color: #FFF;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.container .title {
+  background: #3498db;
+}
+.container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.title a {
+  margin-left: 150px;
+  padding: 0 3px 0;
+  font-size: 16px;
+  text-decoration: none;
+  border-color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.title a:hover {
+  background-color: #FFF;
+  color: #3498db;
+}
+
+.row {
+  color: #333;
+  background: #FFF;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 2.8;
+}
+.row:hover span {
+  width: 40px;
+  opacity: 1;
+}
+.row:nth-child(2n) {
+  background: #f7f7f7;
+}
+.row:hover {
+  background: #eee;
+}
+
+.remove, .completed {
+  float: right;
+  text-align: center;
+  height: 40px;
+  width: 0;
+  background: #2ecc71;
+  color: #FFF;
+  opacity: 0;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.remove:hover, .completed:hover {
+  background: #27ae60;
+}
+
+.remove {
+  background: #e74c3c;
+}
+.remove:hover {
+  background: #c0392b;
+}
+
+.complete {
+    color: #333;
+    background: #00ae00;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 2.8;
+}
+.complete:hover span:first-of-type {
+  width: 40px;
+  opacity: 1;
+}
+
+.add-new {
+  float: right;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: #2ecc71;
+  color: #FFF;
+  line-height: 2.8;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.add-new:hover {
+  background: #27ae60;
+}
+
+.new-task {
+  background: #ffffff;
+  display: block;
+}
+
+.new-task input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background: rgba(46, 204, 113, 0.20);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  width: 320px;
+  padding: 5px 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.new-task input:focus {
+  box-shadow: inset 0 0 4px #2ecc71;
+}
+
+/*SIGN UP PAGE CSS*/
+
+main {
+  white-space: nowrap;
+  position: relative;
+  top: 5em;
+  margin: 0 auto;
+  width: 33%;
+  height: 20em;
+  background-color: rgb(66, 160, 246);
+  border: 1em solid rgb(15, 140, 255);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+main>span {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 5%;
+  padding: 0.1em 0.3em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+}
+.selectedspan {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  transition: background-color 0.2s ease-in-out;
+}
+main>span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+main>form {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: -5;
+}
+.formvisible {
+  z-index: 1;
+}
+form>label {
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+form>label>input {
+  font-family: inherit;
+  font-weight: bold;
+  color: rgb(15, 140, 255);
+  width:50%;
+  height:2em;
+  font-size: 1em;
+  padding-left: 0.7em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+  margin-bottom: 0.2em;
+}
+form>input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 40%;
+  height: 2em;
+  margin-top: 1em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+}
+form>input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  cursor: pointer;
+}

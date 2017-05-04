@@ -1,0 +1,15 @@
+extends app
+
+block content
+  body
+    p Welcome to your personalized ToDo list.
+    .container
+      .title
+        h1 My ToDo
+        a(href='/logout') Logout
+      #new_task.new-task
+        span#add_task.add-new
+          i.fa.fa-plus
+        input#todo_text(name='todo', placeholder='Add New Task Here', maxlength='24')
+    script(type='text/javascript').
+      var allTasks =!{JSON.stringify(todo_list)}

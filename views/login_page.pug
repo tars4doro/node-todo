@@ -1,0 +1,33 @@
+extends app
+
+block content
+  html
+  body
+    p To use this ToDo app you must login or register
+    main
+      span#firstbutton.selectedspan(onclick="javascript: this.className='selectedspan'; secondbutton.removeAttribute('class'); firstform.className='formvisible'; secondform.removeAttribute('class');") Log In
+      span#secondbutton(onclick="javascript: this.className='selectedspan'; firstbutton.removeAttribute('class'); secondform.className='formvisible'; firstform.removeAttribute('class');") Sign Up
+      form#firstform.formvisible(role='form', action='/login', method='post')
+        label
+          | Your Username
+          br
+          input(type='text', name='username', required='', placeholder='example: user12345')
+        br
+        label
+          | Your Password
+          br
+          input(type='password', name='password', required='', placeholder='example: mYP4ssw0rD')
+        br
+        input(type='submit', value='LOG IN')
+      form#secondform(role='form', action='/register', method='post')
+        label
+          | Your Username
+          br
+          input(type='text', name='username', required='', placeholder='example: user12345')
+        br
+        label
+          | Your Password
+          br
+          input(type='password', name='password', required='', placeholder='example: mYP4ssw0rD')
+        br
+        input(type='submit', value='JOIN!')
